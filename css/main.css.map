@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,YAAY,EAAE,YAAY;CAC7B",
+    "mappings": "",
     "sources": [
-        "main.scss"
+        "../sacc/main.scss"
     ],
     "names": [],
     "file": "main.css"
