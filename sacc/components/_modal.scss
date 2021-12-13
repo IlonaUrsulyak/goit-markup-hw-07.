@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -183,12 +183,11 @@
   padding-right: 3px;
 }
 
-.modal-check {
-  &:checked + .modal-check-text::before{
+.modal-check:checked + .modal-check-text::before{
   background-color: var(--accent-color);
   background-image: url(../img/icon.svg/iconcheck.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: none;}
-}
+  border: none;
+}}

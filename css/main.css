@@ -178,8 +178,7 @@ img {
   margin-top: 30px;
 }
 
-.modal-btn:focus,
-.modal-btn:hover {
+.modal-btn:focus, .modal-btn:hover {
   background-color: #188ce8;
 }
 
@@ -223,7 +222,7 @@ img {
   margin-right: 7px;
 }
 
-.link-modal-check {
+.modal-check-text .link-modal-check {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -232,17 +231,13 @@ img {
   padding-right: 3px;
 }
 
-.modal-check:checked + .modal-check-text::before {
+.modal-check-text .modal-check:checked + .modal-check-text::before {
   background-color: var(--accent-color);
-  background-image: url(../img/icon.svg/icon\check.svg);
+  background-image: url(../img/icon.svg/iconcheck.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border: none;
-}
-
-.visually-hidden {
-  display: none;
 }
 
 .list {
