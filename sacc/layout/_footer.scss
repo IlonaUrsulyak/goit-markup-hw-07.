@@ -1,25 +1,25 @@
 .footer {
   background-color: #2f303a;
   margin: 0 auto;
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer__container {
+.container-icon {
   display: flex;
 }
 
-.footer__information {
+.container-footer-icons {
   width: 206px;
   height: 80px;
   margin-left: 70px;
   padding-top: 12px;
 }
 
-.footer__logo-first {
+.footer-logo-first {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -27,7 +27,7 @@
   color: var(--accent-color);
 }
 
-.footer__logo-second {
+.footer-logo-second {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -36,26 +36,27 @@
   color: #ffffff;
 }
 
-.footer__address {
+.footer-address {
   margin-top: 20px;
 }
 
-.footer__item {
+.footer-item {
   margin-bottom: 9px;
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
-.footer__link {
+.footer-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
 }
 
-.footer__mail,
-.footer__tel {
+.footer-link-mail,
+.footer-link-tel {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -92,22 +93,23 @@
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-  background-color: #2196f3;
-}
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
 }
 
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #2196f3;
+}
+
 .footer-social-icon {
   fill: #ffffff;
 }
 
-.footer__container-mailing{
+.mailing-container {
   display: block;
   width: 570px;
   height: 86px;
@@ -115,11 +117,11 @@
   padding-top: 12px;
 }
 
-.footer__mailing-form {
+.mailing-form {
   display: flex;
 }
 
-.footer__modal-text {
+.footer-modal-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -129,7 +131,7 @@
   margin-bottom: 20px;
 }
 
-.footer__input-mailing {
+.input-mailing {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -146,7 +148,7 @@
   color: var(--main-title-color);
 }
 
-.footer__btn-mailing {
+.btn-mailing {
   border: 0;
   width: 200px;
   height: 50px;
@@ -162,12 +164,13 @@
   letter-spacing: 0.06em;
   color: #ffffff;
   margin-left: 12px;
-  &:hover,
-  &:focus {
-  background-color: #188ce8;
-}
 }
 
-.footer__icon-send {
+.btn-mailing:hover,
+.btn-mailing:focus {
+  background-color: #188ce8;
+}
+
+.footer-icon-send {
   margin-left: 10px;
 }
