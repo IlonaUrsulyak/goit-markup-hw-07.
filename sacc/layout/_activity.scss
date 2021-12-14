@@ -15,9 +15,13 @@
 .activity-list {
   display: flex;
 }
+
 .activity-item {
   margin-right: 30px;
   position: relative;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .text-activity {
@@ -37,6 +41,4 @@
   justify-content: center;
 }
 
-.activity-item:last-child {
-  margin-right: 0;
-}
+

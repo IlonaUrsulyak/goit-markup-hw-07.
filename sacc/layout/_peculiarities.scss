@@ -14,8 +14,10 @@
 
 .peculiarities-item {
   width: 270px;
-  /*height: 101px;*/
   margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .peculiarities-link {
@@ -35,13 +37,10 @@
   height: 70px;
 }
 
-.peculiarities-item:last-child {
-  margin-right: 0;
-}
-
 .peculiarities-after-title {
   margin-bottom: 10px;
 }
+
 .peculiarities-after-title {
   display: flex;
   font-weight: 700;
@@ -51,6 +50,7 @@
   text-transform: uppercase;
   color: var(--second-title-color);
 }
+
 .peculiarities-text {
   font-weight: 400;
   font-size: 14px;
