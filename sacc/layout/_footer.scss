@@ -4,24 +4,22 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.container-icons {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.container-icon {
+
+.footer__container {
   display: flex;
 }
 
-.container-footer-icons {
+.footer__information {
   width: 206px;
   height: 80px;
   margin-left: 70px;
   padding-top: 12px;
 }
 
-.footer-logo-first {
+.footer__logo-first {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -29,7 +27,7 @@
   color: var(--accent-color);
 }
 
-.footer-logo-second {
+.footer__logo-second {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -38,26 +36,26 @@
   color: #ffffff;
 }
 
-.footer-address {
+.footer__address {
   margin-top: 20px;
 }
 
-.footer-item {
+.footer__item {
   margin-bottom: 9px;
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.footer-link {
+.footer__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
 }
 
-.footer-link-mail,
-.footer-link-tel {
+.footer__mail,
+.footer__tel {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -108,7 +106,8 @@
 .footer-social-icon {
   fill: #ffffff;
 }
-.mailing-container {
+
+.footer__container-mailing{
   display: block;
   width: 570px;
   height: 86px;
@@ -116,11 +115,11 @@
   padding-top: 12px;
 }
 
-.mailing-form {
+.footer__mailing-form {
   display: flex;
 }
 
-.footer-modal-text {
+.footer__modal-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -130,7 +129,7 @@
   margin-bottom: 20px;
 }
 
-.input-mailing {
+.footer__input-mailing {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -147,7 +146,7 @@
   color: var(--main-title-color);
 }
 
-.btn-mailing {
+.footer__btn-mailing {
   border: 0;
   width: 200px;
   height: 50px;
@@ -169,6 +168,6 @@
 }
 }
 
-.footer-icon-send {
+.footer__icon-send {
   margin-left: 10px;
 }

@@ -1,7 +1,7 @@
 .activity {
   margin-bottom: 94px;
 }
-.activity-title {
+.activity__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -12,11 +12,11 @@
   margin-bottom: 50px;
 }
 
-.activity-list {
+.activity__list {
   display: flex;
 }
 
-.activity-item {
+.activity__item {
   margin-right: 30px;
   position: relative;
   &:last-child {
@@ -24,7 +24,7 @@
   }
 }
 
-.text-activity {
+.activity__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -40,5 +40,3 @@
   align-items: center;
   justify-content: center;
 }
-
-
