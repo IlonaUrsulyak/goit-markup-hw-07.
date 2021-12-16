@@ -3,27 +3,27 @@
   padding-bottom: 25px;
   border-bottom: 1px solid #eeeeee;
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
-.header-navigation {
+.header__navigation {
   display: flex;
   align-items: center;
 }
 
-.header-connect {
+.header__connect {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
 
-.header-list {
+.header__list {
   display: flex;
   margin-left: 95px;
 }
 
-.header-item {
+.header__item {
   margin-right: 50px;
     &:last-child {
     margin-right: 0;
@@ -40,7 +40,7 @@
   }
 }
 
-.header-link {
+.header__link {
   display: inline-block;
   font-weight: 500;
   font-size: 14px;
@@ -55,22 +55,22 @@
 }
 }
 
-.header-icons-mail:hover .header-icon-mail,
-.header-icons-mail:focus .header-icon-mail {
+.header__icons-mail:hover .header__icon-mail,
+.header__icons-mail:focus .header__icon-mail {
   fill: #2196f3;
 }
 
-.header-icons-tel:hover .header-icon-tel,
-.header-icons-tel:focus .header-icon-tel {
+.header__icons-tel:hover .header__icon-tel,
+.header__icons-tel:focus .header__icon-tel {
   fill: #2196f3;
 }
 
-.header-icon-tel,
-.header-icon-mail {
+.header__icon-tel,
+.header__icon-mail {
   fill: #757575;
 }
 
-.header-logo-first {
+.header__logo-first {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -79,7 +79,7 @@
   color: var(--accent-color);
 }
 
-.header-logo-second {
+.header__logo-second {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -88,7 +88,7 @@
   color: #000;
 }
 
-.header-mail {
+.header__mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -97,7 +97,7 @@
   margin-right: 50px;
 }
 
-.header-tel {
+.header__tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -114,7 +114,7 @@
   padding-top: 2px;
 }
 
-.header-icon-tel {
+.header__icon-tel {
   display: inline-flex;
   align-items: center;
   width: 10px;
