@@ -41,6 +41,21 @@ img {
   padding-right: 15px;
   margin: 0px auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .backdrop {
   width: 100vw;
@@ -396,14 +411,18 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  /* font-size: 44px;
-  line-height: 1.36; */
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
@@ -411,6 +430,14 @@ img {
   color: var(--main-title-color);
   text-align: center;
   margin: 0 auto;
+  max-width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__btn {
@@ -439,31 +466,42 @@ img {
 }
 
 .peculiarities {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .peculiarities__title {
   display: none;
 }
 
-.peculiarities__list {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .peculiarities__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
-
-.peculiarities__item {
-  width: 270px;
-  margin-right: 30px;
+.peculiarities__list .peculiarities__item {
+  width: 100%;
+  /* margin-right: 30px; */
+  margin-bottom: 30px;
 }
-.peculiarities__item:last-child {
+.peculiarities__list .peculiarities__item:last-child {
   margin-right: 0;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .peculiarities__list .peculiarities__item {
+    width: calc(100%/ 2 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .peculiarities__link {
-  width: 270px;
-  height: 120px;
   display: flex;
+  height: 120px;
   align-items: center;
   justify-content: center;
   background-color: #f5f4fa;
@@ -478,14 +516,19 @@ img {
 }
 
 .peculiarities__after-title {
-  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--second-title-color);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .peculiarities__after-title {
+    text-align: left;
+  }
 }
 
 .peculiarities__text {

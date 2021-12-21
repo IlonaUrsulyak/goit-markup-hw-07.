@@ -9,14 +9,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
   padding-bottom: 200px;
+    } 
 }
 
 .hero__title {
   font-weight: 900;
-  /* font-size: 44px;
-  line-height: 1.36; */
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
@@ -24,7 +26,13 @@
   color: var(--main-title-color);
   text-align: center;
   margin: 0 auto;
-}
+  max-width: 360px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    } 
+  }
 
 .hero__btn {
   display: block;
