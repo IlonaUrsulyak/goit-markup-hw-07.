@@ -46,7 +46,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    margin-left: 84px;
+    /* margin-left: 84px; */
     } 
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -67,8 +67,11 @@
     background-color: #2196f3;
     border-radius: 2px;
     position: absolute;
-    bottom: -33px;
+    bottom: -37px;
     left: 0;
+    @media screen and (min-width: 1200px) {
+      bottom: -33px;
+    }
   }
 }
 
@@ -105,45 +108,60 @@
 .header__logo-first {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo-second {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #000;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__mail {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    font-size: 14px;
+  }
 }
 
 .header__tel {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;}
 }
 
 .header-icon-mail {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   width: 16px;
   height: 12px;
-  margin-right: 10px;
+  margin-right: 8px;
   padding-top: 2px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;;}
 }
 
 .header__icon-tel {
@@ -151,12 +169,10 @@
   align-items: center;
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 8px;
   padding-top: 2px;
-}
-
-.header__menu-open-btn{
-  
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;}
 }
 
 .header__menu-open-btn,
@@ -265,7 +281,7 @@ color: #2196F3;
 
 .header__menu-open-btn{
 display: none;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   display: block;
   } 
 }

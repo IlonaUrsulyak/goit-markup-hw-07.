@@ -3,41 +3,41 @@
   margin: 0 auto;
   background-position: center;
   background-size: cover;
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+  height: 100vh;
+  
 }
 
-.footer__container-icon {
-  display: flex;
-}
-
-.container__footer-icons {
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
-  padding-top: 12px;
-}
 
 .footer__logo-first {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    } 
 }
 
 .footer__logo-second {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    } 
 }
 
 .footer__address {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .footer__item {
@@ -52,6 +52,7 @@
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
+  text-align: center;
 }
 
 .footer__mail,
@@ -61,6 +62,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 
 .footer__social-text {
@@ -71,16 +73,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  text-align: center;
 }
 
 .footer__social-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__social-item {
   width: 44px;
   height: 44px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .footer__social-link {
@@ -110,15 +116,17 @@
 
 .footer__mailing{
   display: block;
-  width: 570px;
+  width: 100%;
   height: 86px;
-  margin-left: 95px;
+  /* margin-left: 95px; */
   padding-top: 12px;
 }
 
 .footer__mailing-form {
   display: flex;
-}
+  flex-wrap: wrap;
+  justify-content: center;
+} 
 
 .footer__modal-text {
   font-weight: 700;
@@ -128,10 +136,11 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer__input-mailing {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -148,6 +157,7 @@
 }
 
 .footer__btn-mailing {
+  display: block;
   border: 0;
   width: 200px;
   height: 50px;
@@ -162,7 +172,8 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 12px;
+  /* margin-left: 12px; */
+  margin-top: 20px;
   &:hover,
   &:focus {
   background-color: #188ce8;
@@ -171,4 +182,17 @@
 
 .footer__icon-send {
   margin-left: 10px;
+}
+
+.footer__container-icon {
+display: flex;
+flex-wrap: wrap;
+} 
+
+.container__footer-icons {
+  width: 206px;
+  height: 80px;
+  /* margin-left: 70px; */
+  padding-top: 12px;
+  margin-bottom: 60px;
 }
