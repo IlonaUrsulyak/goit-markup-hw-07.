@@ -1,6 +1,8 @@
 .project {
-  padding-top: 94px;
-  padding-bottom: 93px;
+  /* padding-top: 94px;
+  padding-bottom: 93px; */
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .project-item {
@@ -15,11 +17,15 @@
 }
 
 .project__filter-list  {
+  /* display: flex;
+  margin-left: 280px; */
   display: flex;
-  margin-left: 280px;
+  flex-wrap: wrap;
+
 }
 
 .project__filter-btn {
+  margin-top: 10px;
   border: 0;
   font-family: inherit;
   font-weight: 500;
@@ -46,6 +52,7 @@
   &:last-child {
     margin-right: 0;
   }
+
 }
 
 .project__list {
