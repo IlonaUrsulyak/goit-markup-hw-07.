@@ -10,8 +10,8 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -24,6 +24,10 @@
   align-items: center;
   justify-content: center;
   padding: 38px;
+  @media screen and (min-width: 1200px) {
+  width: 528px;
+  min-height: 581px;
+    } 
 }
 
 .modal__close {
@@ -161,7 +165,7 @@
 }
 
 .modal-form__check-text{
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -177,15 +181,21 @@
     border-radius: 2px;
     margin-right: 7px;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    } 
 }
 
 .modal-form__check-link{
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
   padding-right: 3px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    } 
 }
 
 .modal-form__check{
