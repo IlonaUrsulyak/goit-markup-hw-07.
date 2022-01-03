@@ -278,6 +278,55 @@
             </form>
         </div>
     </footer> 
+    <div class="backdrop is-hidden" data-modal  >
+        <div class="modal">
+    <button type="button" class="modal__close" data-modal-close>
+    <svg class="close-icon" width='18' height="18">
+        <use href="./img/icon.svg/icons.svg#icon-close-black-18dp-2-1"></use>
+    </svg>
+    </button>
+    <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+    <form class='modal-form' action="#">
+        <div class="modal-form__field">
+        <label class="modal-form__text">Имя
+        <div class="modal-form__wrap">
+        <input type="text" name="user-name" class="modal-form__input" required placeholder=" "/>
+        <svg class="modal-form__icon" width='18' height="18">
+        <use href="./img/icon.svg/icons.svg#icon-person-black"></use>
+        </svg></div>
+        </label>
+    </div>
+    <div class="modal-form__field">
+    <label  class="modal-form__text">Телефон
+    <div class="modal-form__wrap"><input type="tel" name="user-tell" class="modal-form__input" required placeholder=" "/>
+    <svg class="modal-form__icon" width='18' height="18">
+        <use href="./img/icon.svg/icons.svg#icon-phone-black"></use>
+    </svg></div>
+    </label>
+    </div>
+    <div class="modal-form__field">
+    <label  class="modal-form__text">Почта
+    <div class="modal-form__wrap"><input type="email" name="user-email" class="modal-form__input"required placeholder=" "/>
+    <svg class="modal-form__icon" width='18' height="18">
+        <use href="./img/icon.svg/icons.svg#icon-email-black"></use>
+    </svg></div>
+    </label>
+    </div>
+    <div class='modal-form__field'>
+    <label for='user-text' class="modal-form__text">Комментарий</label>
+    <textarea name="user-text" id="user-text" class="modal-form__placeholder" placeholder="Введите текст"></textarea>
+    </div>
+    <div class="modal-form__field">
+        <input type="checkbox" name="policy" id="modal-check" class="modal-form__check is-hidden">
+        <label for="modal-check" class="modal-form__check-text"> Cоглашаюсь с рассылкой и принимаю<a href="" class="modal-form__check-link"> Условия договора</a></label>
+    </div>
+        
+    <button type="submit" class="modal-form_btn">Отправить</button>
+    </form>
+            </div>
+        </div>
+        <script src="./img/js/modal.js"></script>
+        <script src="./img/js/menu.js"></script>
 </body>
 
 </html>
