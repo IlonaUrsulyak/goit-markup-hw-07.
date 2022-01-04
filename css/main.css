@@ -58,6 +58,7 @@ img {
 }
 
 .backdrop {
+  z-index: 999;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -292,6 +293,11 @@ img {
 
 .link {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .header {
@@ -877,7 +883,7 @@ img {
 }
 .team-list .team-list__item:last-child {
   margin-right: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .team-list .team-list__item {
@@ -1308,6 +1314,7 @@ img {
   padding-bottom: 93px; */
   padding-top: 50px;
   padding-bottom: 60px;
+  z-index: 999;
 }
 
 .project-item {
