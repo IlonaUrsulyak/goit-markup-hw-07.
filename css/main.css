@@ -835,7 +835,7 @@ img {
 
 .team {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   background-color: #f5f4fa;
   background-position: center;
   background-size: cover;
@@ -883,7 +883,7 @@ img {
 }
 .team-list .team-list__item:last-child {
   margin-right: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .team-list .team-list__item {
@@ -893,7 +893,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team-list .team-list__item {
-    width: calc(100%/ 4 - 30px);
+    width: calc( 100%/ 4 - 30px);
   }
 }
 
@@ -1314,7 +1314,6 @@ img {
   padding-bottom: 93px; */
   padding-top: 50px;
   padding-bottom: 60px;
-  z-index: 999;
 }
 
 .project-item {
